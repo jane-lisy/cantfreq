@@ -5,26 +5,25 @@ Note: features within each column/field are denoted with a `code block`.
 
 - Structure:
 
-Any sound structure, including tones, segments, or sequences of segments in syllables or rimes, typically the focus of an investigation. See also special rows. 
+Any sound structure, including tones, segments, or sequences of segments in syllables or rimes, typically the focus of an investigation. Phonological units are transcribed with the Jyutping system. See also special rows. 
 
-- StructureType: `Syllable`, `Rime`, `Segment`, `Tone`
+- StructureType: `syllable`, `rime`, `segment`, `tone`
 
-Describes the type of phonological structure so that its appropriate baseline can be called. For example, structures with structure type `Syllable` are all atonal syllables, that is one of the licit Onset + Rime combinations. The special row Structure(`HKCAC`) with StructureType(`Syllable`) has frequency data for the total number of syllables in this corpus, by type and token (see below). `Rime` is the only other complex structure type, composed of the X1X2 portion of the syllable. Note that diphthongs are specified `Rime`, because they are traditionally analyzed this way, and this is consistent with their analysis in the Cantonese syllable (see the article).
+Describes the type of phonological structure so that its appropriate baseline can be called. For example, structures with structure type `syllable` are all atonal syllables, that is one of the licit Onset + Rime combinations. The special row Structure(`HKCAC`) with StructureType(`syllable`) has frequency data for the total number of syllables in this corpus, by type and token (see below). `rime` is the only other complex structure type, composed of the X1X2 portion of the syllable. Note that diphthongs are specified `rime`, because they are traditionally analyzed this way, and this is consistent with their analysis in the Cantonese syllable (see the article).
 
-- SyllableEncodingType: `Regular`, `Colloquial`, `Loan`, `Impossible`
+- SyllableEncodingType: `regular`, `colloquial`, `loan`, `impossible`
 
-Only relevant for structures with StructureType(`Syllable`). Based on the Bauer and Benedict’s (1997) classification of how syllables are encoded (i.e., Regular syllables have standard Chinese characters, all other values do not). Structures that are not StructureType(`Syllable`) are specified `@@@` for this field.
+Only relevant for structures with StructureType(`syllable`). Based on the Bauer and Benedict’s (1997) classification of how syllables are encoded (i.e., Regular syllables have standard Chinese characters, all other values do not). Structures that are not StructureType(`syllable`) are specified `###` for this field.
 
 - SyllableShape: `CV`, `CVV`, `CVN`, `CVS`, `N`
 
-Only used for structures with StructureType(`Syllable`). This gives the CV structure of the syllable, as described in the article. Structures that are not StructureType(`Syllable`) are specified `###` for this field.
+Only used for structures with StructureType(`syllable`). This gives the CV structure of the syllable, as described in the article. Structures that are not StructureType(`syllable`) are specified `###` for this field.
 
-- SyllabicRole: `Onset`, `Nucleus`, `Coda`, `Rime`, `Syllable`, `Tone`
+- SyllabicRole: `onset`, `nucleus`, `coda`, `rime`, `syllable`, `tone`
 
-Specified for all structures except the special rows. Describes the syllabic role of the structure, i.e., what function it plays in the syllable. Some structures can play more than one rule. For example, p/`Onset` is the sound /p/ in the role of Onset, where as p/`Coda` is /p/ in a Coda position at the end of a syllable. Note that the nasal /m/ can be either `Onset`, `Nucleus` (for syllabic nasal) or `Coda`. Monophthongal vowels are always `Nucleus` because they occupy the X1 slot of a syllable, and diphthongs are always `Rime` because they fill up both X1X2. The six tone structures are specified `Tone`, and the many atonal syllable structures are `Syllable`.
+Specified for all structures except the special rows. Describes the syllabic role of the structure, i.e., what function it plays in the syllable. Some structures can play more than one rule. For example, p/`onset` is the sound /p/ in the role of Onset, where as p/`coda` is /p/ in a Coda position at the end of a syllable. Note that the nasal /m/ can be either `onset`, `nucleus` (for syllabic nasal) or `coda`. Monophthongal vowels are always `nucleus` because they occupy the X1 slot of a syllable, and diphthongs are always `rime` because they fill up both X1X2. The six tone structures are specified `tone`, and the many atonal syllable structures are `syllable`. Note that segments in our counts are phonemes, meaning that allophones of the same phoneme are tallied in the same row.
 
 - HKCACTypeFrequencies
-
 The type frequency of a given structure/role in HKCAC, and 0 if not present in the corpus.
 
 - HKCACTokenFrequencies
