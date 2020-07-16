@@ -33,6 +33,18 @@ The frequency of a word in IARPA, 0 if not present in this corpus.
 
 - **IARPAProbability**  
 The probability of a word in IARPA, 0 if not present in this corpus.
+
+- **TotalFrequency**  
+The frequency of a word in all corpora.
+
+- **TotalProbability**  
+The probability of a word in all corpora combined.
+
+- **HKFrequency**  
+The frequency of a word in HKCAC and HKCanCor (both Hong Kong Cantonese) tallied.
+
+- **HKProbability**  
+The probability of a word in HKCAC and HKCanCor combined.
 ## References
 Lee, Jackson L. (2015). PyCantonese: Cantonese linguistic research in the age of big data. Talk at the Childhood Bilingualism Research Centre, Chinese University of Hong Kong. September 15. 2015. doi: http://pycantonese.org/
 
