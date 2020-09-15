@@ -1,5 +1,5 @@
 # Word Frequencies Database Overview
-This README file describes the structure and contents of the Word Frequencies data file. The data file was created so that all of the word frequency data in Li, Alderete, and Badrulhisham (2020) can be verified and explored independently. The data file is essentially a large data table in which the rows are words and the columns are fields that give information about the words, like its frequency in some corpus. The rest of this document simply describes content of the fields named in the column headers.
+This README file describes the structure and contents of the Word Frequencies data file. The data file was created so that all of the word frequency data in Li, Badrulhisham, & Alderete (2020) can be verified and explored independently. The data file is essentially a large data table in which the rows are words and the columns are fields that give information about the words, like its frequency in some corpus. The rest of this document simply describes content of the fields named in the column headers.
 ## Field Contents
 - **OrthographicRepresentationTraditional**  
 Standard orthographic representation of a word using traditional Chinese characters or transliterated words (for words without standard characters). The words from IARPA have been converted to traditional characters with HanziConv (Yue, 2016).
